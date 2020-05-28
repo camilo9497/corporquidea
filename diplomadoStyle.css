@@ -1,0 +1,250 @@
+.container-content-diplomado {
+  display: flex;
+  background: white;
+  box-shadow: 0px 3px 6px #00000029;
+  padding: 50px;
+  margin-bottom: 65px;
+  box-sizing: border-box;
+}
+.container-barra-contenido-di {
+  width: 30%;
+}
+
+.container-proceso-diplomado h2 {
+  color: #666666;
+  font-size: 2em;
+  margin-bottom: 45px;
+  border-left: 1px solid #707070;
+  padding-left: 13px;
+}
+.container-barra-proceso-diplomado {
+  width: 100%;
+  height: 15px;
+  border: 1px solid #707070;
+  border-radius: 15px;
+  margin-bottom: 45px;
+}
+.container-barra-azul-diplomado {
+  height: 100%;
+  background: #0288d6;
+  border-radius: inherit;
+}
+.container-list-cursos {
+  padding-left: 18px;
+  margin-bottom: 40px;
+}
+.container-list-cursos:last-child {
+  margin-top: 80px;
+  padding-top: 40px;
+  border-top: 1px solid #707070;
+}
+.title-cont-list-cursos {
+  font-size: 1.4em;
+  color: #666666;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+.container-items-cursos {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.container-check-item {
+  background: #b1b1b1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+.container-check-item .icon-checkmark {
+  color: white;
+}
+.icono-oculto {
+  display: none;
+}
+.text-item-curso-di {
+  font-size: 1.2em;
+  color: #707070;
+  width: 80%;
+}
+.container-ayuda-diplo {
+  background: #0288d6;
+  width: 30%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  border-radius: 12px;
+  color: white;
+  font-size: 1.3em;
+  margin-top: 45px;
+  cursor: pointer;
+}
+.container-ayuda-diplo:hover {
+  opacity: 0.8;
+}
+.container-ayuda-diplo .icon-help-circle {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  left: 13px;
+}
+.container-contenido-diplomado {
+  width: 70%;
+  margin-left: 70px;
+  padding: 40px 0;
+  padding-right: 70px;
+}
+.title-contenido-diplomado {
+  color: #666666;
+  font-size: 2em;
+  padding-bottom: 33px;
+  border-bottom: 1px solid #707070;
+}
+.container-img-video-diplomado {
+  height: 640px;
+  border-bottom: 1px solid #707070;
+}
+.subtitle-contenido-diplomado {
+  color: #707070;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 35px 0;
+}
+.description-contenido-diplomado {
+  color: #707070;
+  font-size: 1.2em;
+  line-height: 35px;
+  padding-bottom: 45px;
+  border-bottom: 1px solid #707070;
+  margin-bottom: 35px;
+}
+.container-recursos-adicionales-di {
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.container-recursos-adicionales-di .icon-paperclip {
+  margin-right: 10px;
+}
+.link-recurso-dip {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #707070;
+  text-decoration: underline;
+}
+.container-dejar-comentario {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #707070;
+}
+.container-dejar-comentario-label {
+  display: flex;
+}
+.container-imagen-user-co {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+}
+.img-user-comentario {
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  overflow: hidden;
+  object-fit: cover;
+}
+.container-label-comentar {
+  width: calc(100% - 81px);
+}
+.text-comentario {
+  height: 33px;
+  border-bottom: 1px solid #707070;
+  width: 100%;
+  font-size: 1.2em;
+}
+.boton-comentario {
+  background: #b5b5b5;
+  color: #707070;
+  border-radius: 12px;
+  padding: 15px 30px;
+  align-self: flex-end;
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+.boton-comentario:hover {
+  background: #707070;
+  color: white;
+}
+.numeros-comentarios {
+  color: #707070;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 45px;
+}
+.container-comentarios-usuarios-exp {
+  display: flex;
+  align-items: space-between;
+  margin-bottom: 25px;
+}
+.container-nombre-dia {
+  display: flex;
+  align-items: center;
+}
+.container-contenido-comentarios {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3px 0;
+  width: calc(100% - 75px);
+}
+.nombre-usuario {
+  font-size: 1.2em;
+  color: #707070;
+  font-weight: bold;
+  margin-right: 8px;
+}
+.fecha-comentario {
+  color: #c1c1c1;
+  font-size: 1em;
+}
+.contenido-comentario {
+  font-size: 1.2em;
+  color: #707070;
+  line-height: 30px;
+}
+@media screen and (max-width: 1700px) {
+  .container-content-diplomado {
+    /* padding: 85px; */
+  }
+}
+@media screen and (max-width: 1650px) {
+  .container-img-video-diplomado {
+    height: 560px;
+  }
+}
+@media screen and (max-width: 1420px) {
+  .container-img-video-diplomado {
+    height: 460px;
+  }
+}
+@media screen and (max-width: 1380px) {
+  .container-content-diplomado {
+    font-size: 13px;
+  }
+  .container-barra-proceso-diplomado {
+    height: 10px;
+  }
+  .container-proceso-diplomado h2 {
+    line-height: 30px;
+  }
+}

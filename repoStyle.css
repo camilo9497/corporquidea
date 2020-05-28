@@ -1,0 +1,120 @@
+.container-title-repo {
+  font-size: 16px;
+  padding: 75px 0;
+}
+.container-fragment-repo {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.imagen-principal-repo {
+  text-align: center;
+  position: relative;
+}
+.img-principal-repo {
+  width: 230px;
+}
+.container-btn-repo {
+  position: absolute;
+  left: 300px;
+  top: 25px;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 6px #00000029;
+  background: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-question {
+  font-size: 40px;
+  color: #4a4a4a;
+}
+.title-repo {
+  color: #1561a9;
+  font-size: 2.7em;
+  text-align: center;
+  margin-top: 35px;
+}
+.container-content-repo {
+  margin-bottom: 50px;
+  padding: 45px 70px;
+}
+.container-content {
+  margin-bottom: 8em;
+}
+.content-repo {
+  font-size: 1.2em;
+  color: #4a4a4a;
+  line-height: 2.1em;
+  text-align: center;
+}
+.text-final {
+  text-align: center;
+  font-size: 2.7em;
+  color: #707070;
+  margin-bottom: 65px;
+}
+main.back-content-rpo .container-content-repo {
+  background: white;
+  box-shadow: 0px 3px 6px #00000029;
+}
+.container-imagenes-repo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container-imagenes-repo img {
+  width: 390px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 50px;
+  margin-right: 35px;
+  margin-top: 35px;
+}
+.container-imagenes-repo img:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 1600px) {
+  .container-fragment-repo {
+    padding: 0px 80px;
+  }
+  .container-content-repo {
+    margin-bottom: 0;
+  }
+  .text-final {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .container-imagenes-repo img {
+    width: 350px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .container-title-repo {
+    font-size: 13px;
+    padding-bottom: 40px;
+  }
+  .container-content {
+    font-size: 13px;
+    margin-bottom: 64px;
+  }
+  .img-principal-repo {
+    width: 180px;
+  }
+  .container-btn-repo {
+    width: 80px;
+    height: 80px;
+  }
+  .icon-question {
+    font-size: 30px;
+  }
+  .container-imagenes-repo img {
+    width: 290px;
+    height: 250px;
+  }
+}

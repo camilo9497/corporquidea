@@ -1,0 +1,208 @@
+.container-intro-ciobe {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 65px 0;
+}
+.container-fragment-ciobe {
+  display: inherit;
+  flex-direction: inherit;
+  align-items: inherit;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.container-imagen-ciobe {
+  text-align: center;
+  width: 500px;
+  margin-bottom: 45px;
+}
+.container-imagen-ciobe img {
+  width: 100%;
+}
+.title-ciobe {
+  color: #6d1e53;
+  font-size: 2.7em;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.text-intro-ciobe {
+  font-size: 1.2em;
+  color: #4a4a4a;
+  line-height: 35px;
+  text-align: center;
+}
+.container-content-ciobe {
+  background-image: url(./assets/orquideaFondo.png);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  font-size: 16px;
+  padding: 60px 0 40px;
+  margin-bottom: 45px;
+}
+.title-content {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 2.7em;
+  margin-bottom: 45px;
+}
+.container-circulares {
+  background: #f6f6f6;
+}
+.container-fragment-ciobe-segundario {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.container-content-circulares {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding: 45px 0;
+}
+.container-contenido-cir:nth-child(1) {
+  margin-right: 100px;
+}
+.container-contenido-cir {
+  width: 100%;
+}
+.container-contenido-cir h3 {
+  color: #6d1e53;
+  font-size: 1.9em;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.container-info-cir {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 8px;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 80px;
+}
+.text-link-cir {
+  font-size: 1.2em;
+  padding-right: 80px;
+  line-height: 23px;
+}
+.container-icono {
+  margin-right: 25px;
+}
+.container-info-cir .icon-download {
+  font-size: 22px;
+  color: #5d0041;
+  margin-left: 15px;
+}
+.title-resumen {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+.container-instrucciones {
+  display: flex;
+}
+.container-instrucciones .icon-download {
+  color: #5d0041;
+  font-size: 36px;
+  margin-right: 10px;
+}
+.info-instrucciones {
+  font-size: 1.2em;
+}
+.info-instrucciones span {
+  color: #5d0041;
+  font-weight: bold;
+}
+.container-actividades {
+  padding: 65px 0 0 0;
+}
+.container-fragment-actividades {
+  max-width: 370px;
+  margin: 0 auto;
+}
+.container-actividad {
+  color: #edb2d2;
+  font-weight: bold;
+  margin-bottom: 45px;
+}
+.title-actividad {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+.container-detail-actividad {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.container-detail-actividad .icon-world {
+  color: white;
+  font-size: 25px;
+}
+.container-detail-actividad .icon-download {
+  color: white;
+  font-size: 25px;
+}
+.container-detail-actividad .icon-users {
+  color: white;
+  font-size: 25px;
+}
+.content-actividad {
+  font-size: 1.1em;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 20px;
+}
+.container-inscripcion-ciobe {
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+  background: #feafa5;
+  border-radius: 12px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 1s ease-in-out;
+}
+.container-inscripcion-ciobe:hover {
+  transform: scale(1.03);
+}
+.inscripcion-ciobe {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+.container-inscripcion-ciobe p {
+  font-size: 1.5em;
+  color: white;
+}
+.container-inscripcion-ciobe span {
+  font-size: 1em;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1380px) {
+  .container-inscripcion-ciobe {
+    max-width: 1100px;
+  }
+  .container-intro-ciobe,
+  .container-content-ciobe,
+  .container-inscripcion-ciobe {
+    font-size: 13px;
+  }
+  .container-imagen-ciobe {
+    width: 320px;
+  }
+}

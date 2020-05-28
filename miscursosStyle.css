@@ -1,0 +1,184 @@
+.autor-proceso {
+  color: #666666;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.container-barra-proceso {
+  width: 100%;
+  height: 15px;
+  border: 1px solid #707070;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.container-porcentaje-proceso {
+  height: inherit;
+  background: #0288d6;
+  border-radius: inherit;
+  overflow: hidden;
+}
+.container-card-proceso {
+  display: flex;
+  width: 100%;
+  background: white;
+  box-shadow: 0px 3px 6px #00000029;
+  padding: 30px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+.container-fragmen-mis-cursos {
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto;
+  display: inherit;
+  box-sizing: border-box;
+}
+
+.container-card-proceso-content {
+  width: 60%;
+}
+.container-btn-card-proceso {
+  width: 40%;
+}
+.container-proceso-numbers {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.container-proceso-numbers p {
+  color: #666666;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+.title-card-proceso {
+  color: #3d3d3d;
+  font-size: 2.1em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.container-text-card {
+  width: 100%;
+  /* background: blue; */
+  height: 2em;
+}
+.container-text-card:active {
+  height: auto;
+}
+
+.content-card-proceso {
+  font-size: 1.2em;
+  color: #666666;
+  font-weight: bold;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-x: unset;
+}
+.container-btn-card-proceso {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-ir-unidad {
+  color: white;
+  font-weight: bold;
+  background: #0288d6;
+  text-align: center;
+  padding: 15px 45px;
+  border-radius: 12px;
+  font-size: 1.7em;
+}
+.btn-ir-unidad:hover {
+  opacity: 0.8;
+}
+.container-link-adjunto {
+  display: flex;
+  margin-bottom: 45px;
+  padding-left: 30px;
+}
+.container-link-adjunto .icon-paperclip {
+  font-size: 22px;
+  color: gray;
+  margin-right: 12px;
+}
+.container-content-todos-cursos {
+  margin-bottom: 45px;
+}
+.recurso-curso {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #666666;
+  text-decoration: underline;
+}
+.container-icono-check {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #b1b1b1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4px;
+  box-sizing: border-box;
+  margin-left: 25px;
+}
+.icono-chulo-proceso {
+  height: 4px;
+  border-left: 5px solid white;
+  border-bottom: 5px solid white;
+  width: 12px;
+  transform: rotate(-47deg);
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.item-card-curso {
+  padding: 30px;
+  border-bottom: 1px solid gray;
+  cursor: pointer;
+}
+.item-card-curso:hover {
+  background: #edebeb;
+}
+.container-item-segundario {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.text-item-card-proceso {
+  color: #666666;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+.title-item-card-proceso {
+  color: #3d3d3d;
+  font-size: 2.1em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.container-icono-item-curso .icon-keyboard_arrow_down {
+  font-size: 85px;
+  color: #707070;
+}
+.title-aprende-mas {
+  color: #3d3d3d;
+  font-size: 2.4em;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 1700px) {
+  .container-fragmen-mis-cursos {
+    padding: 0 85px;
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  .container-card-proceso {
+    font-size: 12px;
+  }
+  .container-content-todos-cursos {
+    font-size: 12px;
+  }
+  .container-barra-proceso {
+    height: 11px;
+  }
+}

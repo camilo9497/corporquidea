@@ -1,0 +1,689 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+  /* font-family: "Pacifico", cursive; */
+  /* font-family: 'Dosis', sans-serif; */
+}
+
+:root {
+  --backgroundButton: #0288d6;
+  --titulos: "Dosis";
+}
+
+/* Estilos header  */
+.header {
+  display: flex;
+  padding: 0 45px 0 90px;
+  height: 110px;
+  box-shadow: 0px 3px 6px #00000029;
+  background: white;
+}
+body {
+  background: #f6f6f6;
+}
+.container-logo {
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-logo a {
+  display: flex;
+  justify-content: inherit;
+  align-items: inherit;
+}
+.container-logo img {
+  width: 310px;
+}
+.container-menu {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 16px;
+}
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+li:hover {
+  background: var(--backgroundButton);
+  border-radius: 10px;
+}
+li:hover .container-menu-despl {
+  display: initial;
+}
+li:hover .item-menu,
+li:hover .icon-keyboard_arrow_down {
+  color: white;
+}
+.opciones-menu {
+  display: flex;
+  /* position: relative; */
+}
+.item-menu {
+  font-size: 1.6em;
+  color: #707070;
+}
+li:nth-child(1),
+li:nth-child(4) {
+  position: relative;
+}
+li .icon-keyboard_arrow_down {
+  font-size: 20px;
+  color: #666666;
+  margin-left: 8px;
+}
+li:nth-child(6),
+li:nth-child(7) {
+  text-transform: uppercase;
+}
+
+.b-header {
+  font-size: 1.5em;
+  margin-left: 15px;
+}
+.container-menu-despl {
+  display: none;
+  position: absolute;
+  bottom: -111px;
+  left: 0;
+  background: white;
+  box-shadow: 0px 3px 6px #00000029;
+  width: 180px;
+}
+.list-desple:hover {
+  background: #f2f0f0;
+  border-radius: 0;
+}
+.link-desple {
+  width: 100%;
+  font-size: 1.2em;
+  color: #707070;
+}
+
+/* Estilos Footer  */
+
+.footer {
+  font-size: 16px;
+}
+
+.container-inscripcion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "titulo titulo"
+    "texto-suscribcion formulario";
+
+  background-image: url(./assets/backgroundFooter@2x.png);
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  padding: 55px 0 85px 0;
+}
+.container-titulo {
+  grid-area: titulo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 45px;
+}
+.container-titulo h3 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: white;
+  font-family: var(--titulos), sans-serif;
+}
+.container-text-inscripcion {
+  grid-area: texto-suscribcion;
+  font-size: 1.5em;
+  justify-self: flex-end;
+  align-self: center;
+  width: 57%;
+  padding-right: 80px;
+}
+.container-text-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.text-inscripcion {
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.container-formulario {
+  padding: 45px;
+  grid-area: formulario;
+  width: 52%;
+  display: flex;
+  align-self: center;
+  background: white;
+  justify-self: center;
+  justify-content: center;
+}
+.formulario-inscripcion {
+  background-image: url(./assets/bFormulario.png);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.item-formulario {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.item-formulario input {
+  margin-top: 5px;
+  border-bottom: 1px solid gray;
+  padding: 5px;
+  background: transparent;
+}
+.item-formulario label {
+  color: #4a4a4a;
+}
+.title-select-opciones {
+  font-weight: bold;
+  margin: 8px 0;
+  color: #4a4a4a;
+}
+.select-opciones {
+  width: 100%;
+  padding: 8px 8px;
+  border: 1px solid gray;
+}
+.seleccionar-archivo {
+  border: 1px solid gray;
+  padding: 5px 10px;
+}
+.button-formulario {
+  background: #4a4a4a;
+  border-radius: 8px;
+  height: 40px;
+  width: 80px;
+  color: white;
+  margin-top: 45px;
+  cursor: pointer;
+}
+.button-formulario:hover {
+  background: #8a8a8a;
+}
+.container-redes-sociales {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.container-redes-sociales img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+
+.container-organizaciones {
+  display: flex;
+  background: #eeeeee;
+}
+.container-box {
+  display: inherit;
+  max-width: 1600px;
+  margin: 0 auto;
+  justify-content: inherit;
+  align-items: inherit;
+}
+.container-patrocinadores {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 55px 0;
+  font-size: 16px;
+}
+.container-patrocinadores h3 {
+  color: #6d1e53;
+  font-size: 2.5em;
+  font-family: var(--titulos), sans-serif;
+}
+.container-logos-empresas {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.container-logos-empresas img {
+  width: 130px;
+  margin-top: 20px;
+  margin-right: 35px;
+}
+
+.container-informacion {
+  background: #e1e1e1;
+  padding: 45px 0 25px 0;
+  font-size: 16px;
+}
+.informacion-copor {
+  display: flex;
+}
+.text-info-icon {
+  color: #4a4a4a;
+  font-size: 0.9em;
+}
+.info-icono-corp {
+  width: 680px;
+}
+.icono-informacion-footer {
+  margin-bottom: 35px;
+}
+.container-boton-ayuda {
+  margin-top: 35px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 160px;
+  background: #707070;
+  border-radius: 10px;
+  padding-left: 5px;
+  color: white;
+  cursor: pointer;
+}
+.container-boton-ayuda p {
+  font-size: 0.9em;
+}
+.container-boton-ayuda:hover {
+  background: #4a4a4a;
+}
+.text-ayuda {
+  font-weight: bold;
+}
+.container-boton-ayuda .icon-help-circle {
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  left: 9px;
+  margin-right: 4px;
+}
+.title-informacion-links {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #4a4a4a;
+  margin-bottom: 10px;
+}
+.informacion-links {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 25px;
+}
+.link-info {
+  font-size: 0.9em;
+  color: #4a4a4a;
+  margin-bottom: 3px;
+}
+.link-info:hover {
+  color: #6d1e53;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.copyright P {
+  color: #a7a7a7;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+.logo-copyright {
+  width: 160px;
+  filter: grayscale(100%);
+  margin-right: 15px;
+}
+/* Tarjetas cursos destacados */
+.title-card-cursos {
+  font-size: 2.7em;
+  color: #727272;
+  font-weight: bold;
+  font-family: var(--titulos);
+  text-align: center;
+  margin-top: 60px;
+}
+.title-card-cursos-home {
+  font-size: 2.7em;
+  color: #727272;
+  font-weight: bold;
+  font-family: var(--titulos);
+  text-align: center;
+  margin: 60px 0 45px 0;
+}
+.container-box-card {
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto;
+  align-items: inherit;
+  justify-content: space-evenly;
+}
+.container-cursos-destacados {
+  font-size: 16px;
+  padding: 50px 0;
+  width: 100%;
+}
+.container-cursos-destacados::before {
+  content: "";
+  margin: 0 90px;
+  display: block;
+  background: #727272;
+  height: 1px;
+}
+.card-curso-destacado {
+  height: auto;
+  text-align: center;
+  box-shadow: 0px 3px 6px #00000029;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  word-wrap: break-word;
+  width: 33%;
+  padding-bottom: 40px;
+  margin: 61px 65px 95px 0;
+  background: white;
+  transition: 0.35s ease-in;
+}
+.card-curso-destacado:last-child {
+  margin-right: 0;
+}
+.card-curso-destacado:hover {
+  transform: scale(1.035);
+}
+.container-imagen-card {
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.img-back-card {
+  width: 100%;
+  height: 100%;
+}
+.container-user {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -80px;
+}
+.img-user-card {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+.container-title-button {
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.title-curso-destacado {
+  margin-top: 110px;
+  font-size: 1.4em;
+  padding: 15px;
+}
+
+/* estilos formulario */
+.container-formulario-contacto {
+  width: 60%;
+  padding: 36px 35px;
+  background: #f6f6f6;
+  margin-left: 50px;
+}
+.title-formulario {
+  text-align: center;
+  color: #707070;
+  font-size: 1.7em;
+  margin-bottom: 20px;
+}
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-items-formualario {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+}
+.item-formulario-contacto {
+  height: 45px;
+  margin-bottom: 25px;
+  box-shadow: 0px 3px 6px #00000029;
+  padding: 0 15px;
+}
+.container-numero-cel {
+  display: flex;
+}
+.indicativo-cel {
+  width: 60px;
+  box-sizing: border-box;
+}
+.numero-cel {
+  width: 100%;
+}
+.link-terminos {
+  color: #1592e6;
+}
+.container-terminos-formulario {
+  width: 90%;
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.boton-contacto {
+  width: 70%;
+  height: 50px;
+  border-radius: 14px;
+  box-shadow: 0px 3px 6px #00000047;
+  color: white;
+  background: #e1ebb6;
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.boton-contacto:hover {
+  background: #b1ba8a;
+}
+
+.button {
+  padding: 10px 15px;
+  background: var(--backgroundButton);
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+.boton-mas-cursos {
+  padding: 15px 30px;
+  display: block;
+  margin: 0 auto;
+}
+.text-boton {
+  color: white;
+}
+.button:hover {
+  opacity: 0.8;
+}
+
+/* Media queries header  */
+@media screen and (max-width: 1600px) {
+  .container-logo img {
+    width: 260px;
+  }
+  .container-menu {
+    font-size: 14px;
+  }
+  .container-box {
+    max-width: 1366px;
+  }
+  .container-cursos-destacados::before {
+    margin: 0 50px;
+  }
+
+  .container-box-card {
+    max-width: 1150px;
+  }
+}
+@media screen and (max-width: 1420px) {
+  .container-titulo {
+    padding-top: 0;
+  }
+  .container-formulario {
+    padding: 30px;
+  }
+  .container-text-inscripcion {
+    width: 60%;
+  }
+  .container-redes-sociales img {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container-logo img {
+    width: 240px;
+  }
+  .container-menu {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1380px) {
+  .footer {
+    font-size: 14px;
+  }
+  .container-box {
+    max-width: 1100px;
+    padding: 0 40px;
+  }
+  .container-logo img {
+    width: 210px;
+  }
+  .container-menu {
+    font-size: 10px;
+  }
+  .container-logos-empresas img {
+    width: 120px;
+    margin-right: 30px;
+  }
+  .container-patrocinadores {
+    font-size: 13px;
+  }
+  .container-boton-ayuda {
+    height: 40px;
+    width: 140px;
+  }
+  .icono-informacion-footer {
+    width: 250px;
+  }
+  .container-box-card {
+    max-width: 1000px;
+  }
+  .title-card-cursos {
+    font-size: 2.5em;
+    margin-top: 45px;
+  }
+  .container-card-curso-destacado {
+    justify-content: flex-start;
+  }
+  .card-curso-destacado {
+    margin-right: 40px;
+    margin-bottom: 60px;
+  }
+  .container-imagen-card {
+    height: 200px;
+  }
+  .container-user {
+    width: 110px;
+    height: 110px;
+    bottom: -55px;
+  }
+  .container-title-button {
+    height: 255px;
+  }
+  .title-curso-destacado {
+    margin-top: 70px;
+    font-size: 1.1em;
+  }
+  .container-inscripcion {
+    padding: 30px 0 55px 0;
+    font-size: 13px;
+  }
+}

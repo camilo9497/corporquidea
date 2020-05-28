@@ -1,0 +1,80 @@
+.container-libros {
+  font-size: 16px;
+  margin: 45px 0 120px 0;
+}
+.title-libros {
+  color: #727272;
+  text-align: center;
+  font-size: 2.7em;
+}
+.container-cards-libros {
+  padding: 0 90px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  column-gap: 30px;
+  row-gap: 45px;
+  margin: 35px 0;
+}
+.container-card-libro {
+  background: white;
+  box-shadow: 0px 3px 6px #00000029;
+  padding: 57px 40px 45px 40px;
+}
+.title-libro {
+  color: #c36a96;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.container-imagen-libro {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 25px;
+}
+.imagen-libro {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container-boton-libro {
+  width: 70%;
+  height: 50px;
+  font-weight: bold;
+  background: #1492e6;
+  border-radius: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 35px;
+  cursor: pointer;
+}
+.container-boton-libro:hover {
+  opacity: 0.8;
+}
+.link-boton-libro {
+  font-size: 1.1em;
+  color: white;
+}
+
+@media screen and (max-width: 1370px) {
+  .container-libros {
+    font-size: 14px;
+  }
+  .container-cards-libros {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  .container-imagen-libro {
+    height: 200px;
+  }
+  .container-card-libro {
+    padding: 40px 25px;
+  }
+  .container-boton-libro {
+    width: 85%;
+    height: 40px;
+  }
+  .link-boton-libro {
+    font-size: 0.8em;
+  }
+}
