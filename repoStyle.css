@@ -60,6 +60,9 @@ main.back-content-rpo .container-content-repo {
   background: white;
   box-shadow: 0px 3px 6px #00000029;
 }
+main.back-content-rpo .content-repo {
+  color: #1561a9;
+}
 .container-imagenes-repo {
   display: flex;
   justify-content: center;

@@ -5,6 +5,7 @@
 .container-cursos-content-home {
   max-width: 1700px;
   margin: 0 auto;
+  font-size: 13px;
 }
 .container-fragmen-cursos {
   max-width: 1700px;
@@ -141,4 +142,10 @@
 }
 .boton-comprar-curso:hover {
   opacity: 0.8;
+}
+
+@media screen and (max-width: 1700px) {
+  .container-fragmen-cursos {
+    padding: 0 85px;
+  }
 }

@@ -15,11 +15,16 @@ body {
   height: 100%;
   display: flex;
   margin-top: 40px;
+  background-image: url("./assets/fondoHero.svg");
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: color;
 }
 .title-hero {
-  color: #9eb14d;
+  color: white;
   font-size: 3.7em;
   margin-bottom: 30px;
+  font-weight: bold;
 }
 .contenido-hero {
   width: 40%;
@@ -27,7 +32,7 @@ body {
   padding-left: 125px;
 }
 .text-hero {
-  color: #a5a5a5;
+  color: white;
   font-size: 1.3em;
   line-height: 40px;
   margin-bottom: 60px;
@@ -209,18 +214,6 @@ body {
   font-weight: bold;
 }
 
-/* Estilos modal  */
-.container-modal {
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 0;
-  position: fixed;
-}
-.container-modal-content {
-  background: ;
-}
 @media screen and (max-width: 1600px) {
   .container-apoyo-promociones::before {
     margin: 0 50px;
@@ -231,8 +224,11 @@ body {
 }
 @media screen and (max-width: 1380px) {
   .hero {
-    font-size: 15px;
+    font-size: 14px;
     margin-top: 27px;
+  }
+  .title-hero {
+    line-height: 52px;
   }
   .text-hero {
     line-height: 30px;
