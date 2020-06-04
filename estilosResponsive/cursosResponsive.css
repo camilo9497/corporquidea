@@ -26,21 +26,21 @@
   .container-selec-curso {
     width: 25px;
     height: 25px;
-    padding-bottom: 5px;
     top: 4px;
     right: 0;
   }
-  .container-chulo {
-    height: 4px;
-    border-left: 3px solid white;
-    border-bottom: 3px solid white;
-    width: 9px;
+  .contaienr-selec-curso .icon-checkmark {
+    font-size: 15px;
   }
+
   .container-etiquetas-curso p {
     padding: 5px 15px;
   }
   .container-contenido-curso {
     padding-bottom: 20px;
+  }
+  .container-cursos-content-home {
+    font-size: 13px;
   }
 }
 

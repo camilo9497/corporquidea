@@ -1,0 +1,332 @@
+@media screen and (max-width: 1155px) {
+  .container-inscripcion {
+    grid-template-areas:
+      "titulo"
+      "formulario"
+      "texto-suscripcion";
+    grid-template-columns: 1fr;
+  }
+  .container-formulario {
+    width: 400px;
+  }
+  .container-formulario-contacto {
+    margin: 0 auto;
+    width: 430px;
+  }
+  .container-text-inscripcion {
+    padding-right: 0;
+    margin: 0 auto;
+    width: 430px;
+    text-align: center;
+    padding-top: 33px;
+  }
+  .card-curso-destacado {
+    margin-right: 15px;
+    height: 100%;
+    width: 30%;
+  }
+  .container-imagen-card {
+    height: 180px;
+  }
+  .container-title-button {
+    height: 230px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .contenido-hero {
+    padding: 50px 85px;
+    width: 100%;
+    font-size: 12px;
+  }
+  .container-box {
+    max-width: 800px;
+  }
+  .container-box-card {
+    padding: 0 40px;
+  }
+  .container-organizaciones {
+    flex-direction: column;
+  }
+  .informacion-copor {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-icono-corp {
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  .informacion-links {
+    justify-content: space-between;
+  }
+  .icono-informacion-footer {
+    width: 200px;
+  }
+  .container-boton-ayuda {
+    height: 36px;
+    width: 122px;
+  }
+  .container-boton-ayuda .icon-ayuda {
+    font-size: 15px;
+  }
+  .container-contenido-modal {
+    font-size: 12px;
+  }
+  .container-img-modal img {
+    width: 260px;
+  }
+  .title-modal {
+    line-height: 42px;
+  }
+  .container-modal-content-iniciar {
+    padding: 60px;
+    justify-content: center;
+  }
+  .container-img-modal-iniciar {
+    display: none;
+  }
+  .container-contenido-modal-iniciar {
+    width: 100%;
+  }
+  .container-cerrar-modal-iniciar {
+    right: -9px;
+    width: 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  #container-modal {
+    display: none;
+  }
+}
+@media screen and (max-width: 790px) {
+  .contenido-hero {
+    padding: 50px 40px;
+  }
+  .container-imagen-card {
+    height: 140px;
+  }
+  .container-user {
+    width: 80px;
+    height: 80px;
+    bottom: -40px;
+  }
+  .container-title-button {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container-informacion {
+    font-size: 14px;
+  }
+  .container-inscripcion {
+    font-size: 12px;
+  }
+  .logo-copyright {
+    width: 120px;
+  }
+  .container-box-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-curso-destacado {
+    margin-bottom: 0;
+    width: 270px;
+    margin-right: 0;
+  }
+  .boton-mas-cursos {
+    margin-top: 45px;
+  }
+  .container-valores {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-item-valor {
+    width: 80%;
+    margin-right: 0;
+    margin-bottom: 45px;
+  }
+  .text-opinion {
+    width: 300px;
+  }
+  .title-modal-iniciar {
+    line-height: 40px;
+    font-size: 2.7em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container-formulario {
+    width: 340px;
+  }
+  .container-formulario-contacto {
+    width: 340px;
+  }
+  .container-text-inscripcion {
+    width: 400px;
+  }
+  .logo-copyright {
+    width: 95px;
+  }
+  .copyright p {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container-menu {
+    width: 80%;
+  }
+  .container-fragment-modal-iniciar {
+    padding: 0 45px;
+  }
+}
+@media screen and (max-width: 475px) {
+  .header {
+    padding: 0 20px;
+  }
+  .icon-close {
+    right: 20px;
+  }
+  .container-logo img {
+    width: 180px;
+  }
+  .contenido-hero {
+    box-sizing: border-box;
+  }
+  .text-hero {
+    margin-bottom: 35px;
+  }
+  .contenido-curso-video {
+    margin-bottom: 25px;
+  }
+  .informacion-links {
+    display: none;
+  }
+  .container-fragmen-cursos {
+    padding: 0 30px;
+  }
+  .content-card-acedemic {
+    line-height: 25px;
+    margin-top: 20px;
+  }
+  .container-item-valor {
+    margin-bottom: 35px;
+  }
+  .content-valor {
+    line-height: 25px;
+  }
+  .container-box-dos {
+    padding: 0 40px;
+  }
+  .container-etiquetas-curso p {
+    margin-right: 5px;
+  }
+  .title-video-curso {
+    line-height: 30px;
+  }
+  .container-formulario,
+  .container-formulario-contacto,
+  .container-text-inscripcion {
+    width: 70%;
+  }
+  .container-redes-sociales img {
+    width: 45px;
+    height: 45px;
+  }
+  .container-boton-ayuda {
+    width: 100px;
+    height: 30px;
+  }
+  .icon-ayuda {
+    font-size: 12px;
+  }
+  .container-modal-content-iniciar {
+    padding: 40px;
+  }
+  .container-contenido-modal-iniciar {
+    font-size: 11px;
+  }
+  .title-modal-iniciar {
+    line-height: 33px;
+  }
+  .correo-modal-iniciar {
+    height: 35px;
+    margin-bottom: 15px;
+  }
+  .contraena-modal-iniciar {
+    height: 35px;
+  }
+  .boton-modal-iniciar {
+    height: 35px;
+  }
+  .container-cerrar-modal-iniciar {
+    right: 0px;
+    top: -10px;
+  }
+  .linea-izq,
+  .linea-der {
+    width: 25px;
+  }
+  .item-formulario-contacto {
+    margin-bottom: 15px;
+    height: 40px;
+  }
+  .boton-contacto {
+    height: 35px;
+  }
+  .container {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 411px) {
+  .title-hero {
+    font-size: 3em;
+    line-height: 40px;
+  }
+  .container-etiquetas-curso {
+    display: none;
+  }
+  .container-logos-empresas img {
+    width: 110px;
+    margin-right: 16px;
+  }
+  .logo-copyright {
+    width: 85px;
+  }
+  .copyright p {
+    font-size: 0.5em;
+  }
+  .icono-informacion-footer {
+    width: 150px;
+  }
+  .container-fragment-modal-iniciar {
+    padding: 0 25px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container-box {
+    padding: 0 30px;
+  }
+  .container-box-dos {
+    padding: 0 20px;
+  }
+  .contenido-hero {
+    padding: 30px;
+  }
+  .container-cursos-content-home,
+  .container-cursos-destacados,
+  .container-academic,
+  .container-principios,
+  .container-apoyo-promociones,
+  .container-inscripcion,
+  .container-patrocinadores {
+    font-size: 11px;
+  }
+  .text-opinion {
+    width: 90%;
+  }
+  .container-redes-sociales img {
+    width: 35px;
+    height: 35px;
+  }
+  .container-informacion {
+    font-size: 12px;
+  }
+}

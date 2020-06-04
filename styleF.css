@@ -1,0 +1,253 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("fontsF/icomoon.eot?hp7qfd");
+  src: url("fontsF/icomoon.eot?hp7qfd#iefix") format("embedded-opentype"),
+    url("fontsF/icomoon.ttf?hp7qfd") format("truetype"),
+    url("fontsF/icomoon.woff?hp7qfd") format("woff"),
+    url("fontsF/icomoon.svg?hp7qfd#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-personas:before {
+  content: "\e900";
+}
+.icon-departamento:before {
+  content: "\e90a";
+}
+.icon-libro:before {
+  content: "\e90d";
+}
+.icon-ciencia:before {
+  content: "\e912";
+}
+.icon-computador:before {
+  content: "\e913";
+}
+.icon-audifonos:before {
+  content: "\e914";
+}
+.icon-tablero:before {
+  content: "\e915";
+}
+.icon-Recurso-13:before {
+  content: "\e916";
+}
+.icon-Recurso-14:before {
+  content: "\e917";
+}
+.icon-configuracion:before {
+  content: "\e918";
+}
+.icon-palma:before {
+  content: "\e919";
+}
+.icon-persons:before {
+  content: "\e91a";
+}
+.icon-ayuda:before {
+  content: "\e91b";
+}
+.icon-chat:before {
+  content: "\e91c";
+}
+.icon-ubicacion:before {
+  content: "\e91d";
+}
+.icon-Recurso-22:before {
+  content: "\e91e";
+}
+.icon-Recurso-23:before {
+  content: "\e91f";
+}
+.icon-mundo:before {
+  content: "\e920";
+}
+.icon-descargas:before {
+  content: "\e921";
+}
+.icon-pc:before {
+  content: "\e922";
+}
+.icon-Recurso-27:before {
+  content: "\e923";
+}
+.icon-Recurso-28:before {
+  content: "\e924";
+}
+.icon-documento:before {
+  content: "\e925";
+}
+.icon-orquidea:before {
+  content: "\e926";
+}
+.icon-socials:before {
+  content: "\e927";
+}
+.icon-experiencia:before {
+  content: "\e928";
+}
+.icon-profesor:before {
+  content: "\e929";
+}
+.icon-cultivar:before {
+  content: "\e92a";
+}
+.icon-academia:before {
+  content: "\e92b";
+}
+.icon-arrow_forward_ios:before {
+  content: "\e90b";
+}
+.icon-keyboard_arrow_down:before {
+  content: "\e909";
+}
+.icon-keyboard_arrow_left:before {
+  content: "\e905";
+}
+.icon-x1:before {
+  content: "\e904";
+}
+.icon-x:before {
+  content: "\e903";
+}
+.icon-cancel:before {
+  content: "\e903";
+}
+.icon-close:before {
+  content: "\e903";
+}
+.icon-attachment:before {
+  content: "\e92c";
+}
+.icon-paperclip:before {
+  content: "\e92c";
+}
+.icon-pencil:before {
+  content: "\e90e";
+}
+.icon-write:before {
+  content: "\e90e";
+}
+.icon-edit:before {
+  content: "\e90e";
+}
+.icon-users:before {
+  content: "\e90f";
+}
+.icon-group:before {
+  content: "\e90f";
+}
+.icon-team:before {
+  content: "\e90f";
+}
+.icon-members:before {
+  content: "\e90f";
+}
+.icon-community:before {
+  content: "\e90f";
+}
+.icon-collaborate:before {
+  content: "\e90f";
+}
+.icon-download:before {
+  content: "\e910";
+}
+.icon-save:before {
+  content: "\e910";
+}
+.icon-store:before {
+  content: "\e910";
+}
+.icon-envelop:before {
+  content: "\e902";
+}
+.icon-play:before {
+  content: "\e92d";
+}
+.icon-player2:before {
+  content: "\e92d";
+}
+.icon-bin:before {
+  content: "\e92e";
+}
+.icon-checkmark:before {
+  content: "\e911";
+}
+.icon-tick:before {
+  content: "\e911";
+}
+.icon-correct:before {
+  content: "\e911";
+}
+.icon-accept:before {
+  content: "\e911";
+}
+.icon-ok:before {
+  content: "\e911";
+}
+.icon-location:before {
+  content: "\e907";
+}
+.icon-map-marker:before {
+  content: "\e907";
+}
+.icon-pin:before {
+  content: "\e907";
+}
+.icon-menu1:before {
+  content: "\e908";
+}
+.icon-list2:before {
+  content: "\e908";
+}
+.icon-options1:before {
+  content: "\e908";
+}
+.icon-lines1:before {
+  content: "\e908";
+}
+.icon-hamburger1:before {
+  content: "\e908";
+}
+.icon-star-full:before {
+  content: "\e901";
+}
+.icon-rate1:before {
+  content: "\e901";
+}
+.icon-star1:before {
+  content: "\e901";
+}
+.icon-favorite:before {
+  content: "\e901";
+}
+.icon-bookmark:before {
+  content: "\e901";
+}
+.icon-paint-brush:before {
+  content: "\e90c";
+}
+.icon-graduation-cap:before {
+  content: "\e906";
+}
+.icon-mortar-board:before {
+  content: "\e906";
+}

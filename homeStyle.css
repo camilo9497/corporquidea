@@ -73,9 +73,10 @@ body {
   padding: 45px 25px 65px 25px;
   color: #9eb14d;
 }
-.icon-graduation-cap,
-.icon-sunglasses,
-.icon-calendar {
+.container-card-academic .icon-academia,
+.container-card-academic .icon-profesor,
+.container-card-academic .icon-cultivar,
+.container-card-academic .icon-orquidea {
   font-size: 4.8em;
   color: #08224a;
 }
@@ -134,10 +135,11 @@ body {
 .container-item-valor:last-child {
   margin-right: 0;
 }
-.icon-star-full {
+.container-item-valor i {
   font-size: 4.8em;
   color: #a9b966;
 }
+
 .title-valor {
   font-size: 1.6em;
   margin: 15px 0;
@@ -254,5 +256,16 @@ body {
   }
   .title-card-academic {
     padding: 10px 0;
+  }
+}
+@media screen and (max-width: 475px) {
+  .container-card-academic .icon-academia,
+  .container-card-academic .icon-profesor,
+  .container-card-academic .icon-cultivar,
+  .container-card-academic .icon-orquidea {
+    font-size: 4em;
+  }
+  .container-item-valor i {
+    font-size: 4em;
   }
 }

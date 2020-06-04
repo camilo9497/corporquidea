@@ -137,18 +137,18 @@
   align-items: center;
   margin-bottom: 15px;
 }
-.container-detail-actividad .icon-world {
+.container-detail-actividad i {
   color: white;
   font-size: 25px;
 }
-.container-detail-actividad .icon-download {
+/* .container-detail-actividad .icon-download {
   color: white;
   font-size: 25px;
 }
-.container-detail-actividad .icon-users {
+.container-detail-actividad .icon-mundo {
   color: white;
   font-size: 25px;
-}
+} */
 .content-actividad {
   font-size: 1.1em;
   color: white;
@@ -191,6 +191,12 @@
   text-align: center;
   margin-top: 10px;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1500px) {
+  .container-fragment-ciobe {
+    padding: 0 85px;
+  }
 }
 
 @media screen and (max-width: 1380px) {

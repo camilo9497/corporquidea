@@ -16,6 +16,7 @@
 /* Estilos header  */
 .header {
   display: flex;
+  align-items: center;
   padding: 0 45px 0 90px;
   height: 110px;
   box-shadow: 0px 3px 6px #00000029;
@@ -44,12 +45,15 @@ body {
   justify-content: flex-end;
   align-items: center;
   font-size: 16px;
+  /* display: none; */
+}
+.icon-close {
+  display: none;
 }
 .list-menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* padding: 10px 15px; */
   margin-right: 8px;
   height: 42px;
 }
@@ -78,6 +82,7 @@ body {
   padding: 0 15px;
   height: 100%;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .list-menu:nth-child(1),
 .list-menu:nth-child(4) {
@@ -117,6 +122,9 @@ body {
 .sesion-iniciada {
   display: none;
 }
+.logout-responsive {
+  display: none;
+}
 .container-cerrar-sesion {
   background: white;
   box-shadow: 0px 3px 6px #00000029;
@@ -145,6 +153,7 @@ body {
   box-shadow: 0px 3px 6px #00000029;
   width: 200px;
   width: 180px;
+  z-index: 10;
 }
 .list-desple {
   height: 38px;
@@ -165,6 +174,15 @@ body {
   margin: 0;
 }
 
+/* Estilos menu hamburguesa */
+.container-menu-hamburguesa {
+  display: none;
+}
+.container-menu-hamburguesa .icon-menu1 {
+  color: #a3a0a0;
+  font-size: 2.5em;
+}
+
 /* Estilos Footer  */
 
 .footer {
@@ -176,7 +194,7 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "titulo titulo"
-    "texto-suscribcion formulario";
+    "texto-suscripcion formulario";
 
   background-image: url(./assets/backgroundFooter@2x.png);
   background-size: cover;
@@ -199,7 +217,7 @@ body {
   font-family: var(--titulos), sans-serif;
 }
 .container-text-inscripcion {
-  grid-area: texto-suscribcion;
+  grid-area: texto-suscripcion;
   font-size: 1.5em;
   justify-self: flex-end;
   align-self: center;
@@ -295,6 +313,7 @@ body {
   margin: 0 auto;
   justify-content: inherit;
   align-items: inherit;
+  flex-direction: inherit;
 }
 .container-patrocinadores {
   width: 100%;
@@ -363,7 +382,7 @@ body {
 .text-ayuda {
   font-weight: bold;
 }
-.container-boton-ayuda .icon-help-circle {
+.container-boton-ayuda .icon-ayuda {
   font-size: 20px;
   color: white;
   position: absolute;
@@ -934,14 +953,12 @@ body {
     max-width: 1000px;
     padding: 0 80px;
   }
-  /* .container-fragment-modal-iniciar {
-    padding: 0 80px;
-  } */
+
   .container-img-modal img {
     width: 325px;
   }
   .container-img-modal-iniciar img {
-    width: 400px;
+    width: 300px;
   }
   .title-modal,
   .title-modal-iniciar {
@@ -951,6 +968,130 @@ body {
     width: 180px;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  body {
+    position: relative;
+  }
+  .header {
+    justify-content: space-between;
+    padding: 0 45px;
+  }
+  .container-logo {
+    width: 210px;
+  }
+  .container-menu {
+    display: none;
+  }
+  .container-menu-hamburguesa {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .container-menu {
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 400px;
+    background: white;
+    box-shadow: 0px 3px 6px #00000029;
+    position: fixed;
+    z-index: 20;
+    display: initial;
+    flex-direction: column;
+  }
+  .icon-close {
+    display: initial;
+    color: #a3a0a0;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    right: 45px;
+  }
+  .menu-oculto {
+    display: none;
+  }
+  .container-header-menu-responsive {
+    height: 110px;
+    display: flex;
+    align-items: center;
+  }
+  .opciones-menu {
+    flex-direction: column;
+  }
+  .list-menu {
+    margin-right: 0;
+    flex-direction: column;
+    height: 100%;
+    border-top: 1px solid lightgray;
+  }
+  .list-menu:nth-child(4) {
+    border-bottom: 1px solid lightgray;
+  }
+
+  .list-menu:hover {
+    border-radius: 0;
+    background: lightgray;
+  }
+  .list-menu:hover .container-menu-despl {
+    display: none;
+  }
+  .container-menu-despl {
+    width: 100%;
+    position: none;
+    box-shadow: none;
+  }
+  .container-menu-despl.mostrar-opcion-submenu {
+    position: initial;
+  }
+  .list-desple {
+    padding-left: 25px;
+  }
+  .list-desple:nth-child(3) {
+    border: none;
+  }
+  .list-menu:hover .mostrar-opcion-submenu {
+    display: initial;
+  }
+  .mostrar-opcion-submenu {
+    display: initial;
+  }
+  .icon-up {
+    display: initial;
+    transform: rotate(180deg);
+  }
+  .item-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 42px;
+    cursor: pointer;
+  }
+  .container-user-profile {
+    display: none;
+  }
+  .logout-responsive {
+    display: initial;
+    color: #e60505;
+    font-size: 1.6em;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    cursor: pointer;
+    height: 42px;
+    line-height: 42px;
+  }
+  .logout-responsive:hover {
+    background: #faf5f5;
+  }
+  .b-header {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+
 .quitar-modal {
   display: none;
 }

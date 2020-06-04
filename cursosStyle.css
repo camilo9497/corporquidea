@@ -5,7 +5,7 @@
 .container-cursos-content-home {
   max-width: 1700px;
   margin: 0 auto;
-  font-size: 13px;
+  /* font-size: 13px; */
 }
 .container-fragmen-cursos {
   max-width: 1700px;
@@ -109,16 +109,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 7px;
   box-sizing: border-box;
 }
-.container-chulo {
-  height: 6px;
-  border-left: 5px solid white;
-  border-bottom: 5px solid white;
-  width: 18px;
-  transform: rotate(-47deg);
-  box-shadow: 0px 3px 6px #00000029;
+
+.container-selec-curso .icon-checkmark {
+  font-size: 25px;
+  color: white;
 }
 .ocultar-seleccion {
   display: none;
@@ -147,5 +143,10 @@
 @media screen and (max-width: 1700px) {
   .container-fragmen-cursos {
     padding: 0 85px;
+  }
+}
+@media screen and (max-width: 1380px) {
+  .container-selec-curso .icon-checkmark {
+    font-size: 15px;
   }
 }
