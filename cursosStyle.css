@@ -140,7 +140,7 @@
   opacity: 0.8;
 }
 
-@media screen and (max-width: 1700px) {
+/* @media screen and (max-width: 1700px) {
   .container-fragmen-cursos {
     padding: 0 85px;
   }
@@ -149,4 +149,55 @@
   .container-selec-curso .icon-checkmark {
     font-size: 15px;
   }
+  .container-cursos-content {
+    font-size: 13px;
+  }
+} */
+
+/* ////////////////////////////////////////////////// */
+/* 
+@media screen and (max-width: 1700px) {
+  .container-fragmen-cursos {
+    padding: 0 85px;
+  }
 }
+
+@media screen and (max-width: 1380px) {
+  .container-fragmen-cursos {
+    padding: 0 85px;
+  }
+  .curso-item {
+    grid-template-columns: 547px 1fr;
+  }
+  .container-mis-cursos,
+  .container-cursos-content {
+    font-size: 13px;
+  }
+  .container-insig-user {
+    padding: 20px 30px;
+    width: 370px;
+  }
+  .imagen-user-curso {
+    width: 70px;
+    height: 70px;
+  }
+  .container-selec-curso {
+    width: 25px;
+    height: 25px;
+    top: 4px;
+    right: 0;
+  }
+  .container-selec-curso .icon-checkmark {
+    font-size: 15px;
+  }
+
+  .container-etiquetas-curso p {
+    padding: 5px 15px;
+  }
+  .container-contenido-curso {
+    padding-bottom: 20px;
+  }
+  .container-cursos-content-home {
+    font-size: 13px;
+  }
+} */

@@ -414,42 +414,51 @@
         </div>
       </div>
 
-      <div class="container-formulario">
-        <form class="formulario-inscripcion" action="">
-          <div class="item-formulario">
-            <label for="name">Nombre</label>
-            <input type="text" id="name" name="name" />
+      <div class="container-formulario-contacto">
+        <form class="formulario-contacto" action="">
+          <h2 class="title-formulario">Contáctanos</h2>
+          <div class="container-items-formualario">
+            <input
+              class="item-formulario-contacto"
+              type="text"
+              placeholder="Nombre Completo"
+              id="name"
+              name="name"
+            />
+            <input
+              class="item-formulario-contacto"
+              type="text"
+              placeholder="Correo Electronico"
+              id="name"
+              name="name"
+            />
+            <div class="container-numero-cel">
+              <input
+                class="item-formulario-contacto indicativo-cel"
+                type="text"
+                placeholder="+57"
+                id="name"
+                name="name"
+              />
+              <input
+                class="item-formulario-contacto numero-cel"
+                type="text"
+                placeholder="Número Móvil"
+                id="name"
+                name="name"
+              />
+            </div>
           </div>
-          <div class="item-formulario">
-            <label for="name">Ocupación</label>
-            <input type="text" id="name" name="name" />
+          <div class="container-terminos-formulario">
+            <label class="container">
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+              Acepto los
+              <a class="link-terminos" href="">Términos y Condiciones </a> y las
+              <a class="link-terminos" href="">Políticas de Privacidad</a>
+            </label>
           </div>
-          <div class="item-formulario">
-            <label for="name">Correo</label>
-            <input type="text" id="name" name="name" />
-          </div>
-          <div class="item-formulario">
-            <label for="name">Cedula</label>
-            <input type="text" id="name" name="name" />
-          </div>
-          <div class="item-formulario">
-            <label for="name">Telefono</label>
-            <input type="text" id="name" name="name" />
-          </div>
-
-          <p class="title-select-opciones">Participación</p>
-          <select class="select-opciones" id="opciones" name="opciones">
-            <option value="opcion1">Opcion 1</option>
-            <option value="opcion2">Opcion 2</option>
-            <option value="opcion3">Opcion 3</option>
-            <option value="opcion4">Opcion 4</option>
-          </select>
-          <!-- <p class="title-select-opciones">Resumen</p>
-          <div class="seleccionar-archivo">
-            <input type="file" name="archivosubido" />
-          </div> -->
-          <div class="container-captcha"></div>
-          <button class="button-formulario" type="submit">Enviar</button>
+          <button class="boton-contacto" type="submit">Enviar</button>
         </form>
       </div>
     </section>

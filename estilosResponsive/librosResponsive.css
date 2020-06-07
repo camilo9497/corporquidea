@@ -1,0 +1,32 @@
+@media screen and (max-width: 1007px) {
+  .container-cards-libros {
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 647px) {
+  .container-cards-libros {
+    padding: 0 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container-cards-libros {
+    padding: 0 55px;
+  }
+  .container-card-libro,
+  .title-libro {
+    margin-bottom: 25px;
+  }
+  .container-imagen-libro {
+    height: 170px;
+  }
+  .container-boton-libro {
+    margin-top: 25px;
+    height: 33px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .container-cards-libros {
+    padding: 0 30px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}

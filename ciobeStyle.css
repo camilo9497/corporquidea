@@ -141,14 +141,7 @@
   color: white;
   font-size: 25px;
 }
-/* .container-detail-actividad .icon-download {
-  color: white;
-  font-size: 25px;
-}
-.container-detail-actividad .icon-mundo {
-  color: white;
-  font-size: 25px;
-} */
+
 .content-actividad {
   font-size: 1.1em;
   color: white;
@@ -184,6 +177,7 @@
 .container-inscripcion-ciobe p {
   font-size: 1.5em;
   color: white;
+  text-align: center;
 }
 .container-inscripcion-ciobe span {
   font-size: 1em;

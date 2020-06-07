@@ -82,3 +82,13 @@
     line-height: 30px;
   }
 }
+@media screen and (max-width: 1140px) {
+  .container-videos-orquimundo {
+    padding: 0 40px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .container-videos-orquimundo {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+}

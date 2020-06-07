@@ -8,6 +8,7 @@
 }
 .container-barra-contenido-di {
   width: 30%;
+  position: relative;
 }
 .container-icono-atras {
   height: 30px;
@@ -28,6 +29,7 @@
 .container-ant-sig .icon-configuracion {
   font-size: 32px;
   color: #707070;
+  display: none;
 }
 .container-proceso-diplomado h2 {
   color: #666666;
@@ -96,7 +98,7 @@
   width: 30%;
   display: flex;
   position: relative;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 15px 30px;
   border-radius: 12px;
@@ -108,11 +110,11 @@
 .container-ayuda-diplo:hover {
   opacity: 0.8;
 }
-.container-ayuda-diplo .icon-help-circle {
+.container-ayuda-diplo .icon-ayuda {
   color: white;
   font-size: 25px;
   position: absolute;
-  left: 13px;
+  left: 15px;
 }
 .container-contenido-diplomado {
   width: 70%;
@@ -232,6 +234,7 @@
   border-radius: 50%;
   overflow: hidden;
   margin-right: 15px;
+  grid-area: foto;
 }
 .img-user-comentario {
   width: inherit;
@@ -248,6 +251,7 @@
   border-bottom: 1px solid #707070;
   width: 100%;
   font-size: 1.2em;
+  resize: none;
 }
 .boton-comentario {
   background: #b5b5b5;
@@ -272,21 +276,20 @@
   margin-bottom: 45px;
 }
 .container-comentarios-usuarios-exp {
-  display: flex;
-  align-items: space-between;
+  display: grid;
+  grid-template-areas:
+    "foto nombre"
+    "foto comentario";
+  grid-template-columns: 85px auto;
   margin-bottom: 25px;
 }
+
 .container-nombre-dia {
   display: flex;
   align-items: center;
+  grid-area: nombre;
 }
-.container-contenido-comentarios {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 3px 0;
-  width: calc(100% - 75px);
-}
+
 .nombre-usuario {
   font-size: 1.2em;
   color: #707070;
@@ -301,13 +304,17 @@
   font-size: 1.2em;
   color: #707070;
   line-height: 30px;
+  grid-area: comentario;
 }
 .filtro-gris {
   filter: grayscale(1);
 }
-@media screen and (max-width: 1700px) {
+.container-btn-despl-menu {
+  display: none;
+}
+/* @media screen and (max-width: 1700px) {
   .container-content-diplomado {
-    /* padding: 85px; */
+    
   }
 }
 @media screen and (max-width: 1650px) {
@@ -330,4 +337,4 @@
   .container-proceso-diplomado h2 {
     line-height: 30px;
   }
-}
+} */

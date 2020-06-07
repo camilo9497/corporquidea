@@ -1,0 +1,242 @@
+@media screen and (max-width: 1700px) {
+  .container-content-diplomado {
+    /* padding: 85px; */
+  }
+}
+@media screen and (max-width: 1650px) {
+  .container-img-video-diplomado {
+    height: 560px;
+  }
+}
+@media screen and (max-width: 1420px) {
+  .container-img-video-diplomado {
+    height: 460px;
+  }
+}
+@media screen and (max-width: 1380px) {
+  .container-ayuda-diplo {
+    width: 120px;
+    padding: 10px;
+  }
+  .container-ayuda-diplo .icon-ayuda {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .container-content-diplomado {
+    font-size: 13px;
+    padding: 30px;
+  }
+  .container-barra-contenido-di {
+    width: 40%;
+  }
+  .container-list-cursos {
+    padding-left: 0;
+  }
+  .container-contenido-diplomado {
+    padding-right: 2px;
+    width: 60%;
+    margin-left: 30px;
+  }
+
+  .container-barra-proceso-diplomado {
+    height: 10px;
+  }
+  .container-proceso-diplomado h2 {
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .container-img-video-diplomado {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container-content-diplomado {
+    padding-left: 0;
+    position: relative;
+  }
+  .container-barra-contenido-di {
+    padding: 30px;
+    box-shadow: 0px 3px 6px #00000029;
+    background: white;
+    position: absolute;
+    top: 0;
+    z-index: 15;
+    height: calc(100% - 60px);
+  }
+  .add-barra-curso {
+    display: none;
+  }
+  .container-btn-despl-menu.esconder-menu-despl {
+    display: none;
+  }
+  .container-btn-despl-menu {
+    margin-bottom: 0;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-shadow: 0px 3px 6px #00000029;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 16;
+    top: 60%;
+    left: 35px;
+    cursor: pointer;
+  }
+  .container-btn-despl-menu:hover {
+    background: lightgray;
+  }
+  .cambio-submenu-dipl {
+    transform: rotate(180deg);
+    background: lightgray;
+  }
+  .container-btn-despl-menu i {
+    color: #707070;
+  }
+  .container-btn-despl-menu .container-icono-atras {
+    border: 2px solid #707070;
+  }
+  .icono-nuevo-modal {
+    transform: rotate(180deg);
+  }
+  .container-contenido-diplomado {
+    width: 100%;
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container-btn-despl-menu {
+    top: 70%;
+  }
+}
+@media screen and (max-width: 820px) {
+  .container-img-video-diplomado {
+    height: 320px;
+  }
+}
+@media screen and (max-width: 790px) {
+  .container-btn-despl-menu {
+    left: 10px;
+  }
+  .container-barra-contenido-di {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container-img-video-diplomado {
+    height: 240px;
+  }
+  .container-contenido-diplomado {
+    padding: 20px;
+  }
+  .container-imagen-user-co {
+    width: 50px;
+    height: 50px;
+  }
+  .boton-comentario {
+    padding: 10px 20px;
+  }
+  .container-comentarios-usuarios-exp {
+    grid-template-columns: 60px auto;
+  }
+  .container-label-comentar {
+    width: calc(100% - 65px);
+  }
+}
+@media screen and (max-width: 500px) {
+  .container-logo {
+    width: 180px;
+  }
+  .container-content-diplomado {
+    font-size: 12px;
+  }
+  .container-img-video-diplomado {
+    height: 180px;
+  }
+  .container-comentarios-usuarios-exp {
+    grid-template-areas:
+      "foto nombre"
+      "comentario comentario";
+    row-gap: 10px;
+    grid-template-columns: 40px auto;
+  }
+  .contenido-comentario {
+    text-align: justify;
+    line-height: 25px;
+  }
+  .container-imagen-user-co {
+    width: 35px;
+    height: 35px;
+  }
+  .description-contenido-diplomado {
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+  .container-label-comentar {
+    width: calc(100% - 50px);
+  }
+  .boton-comentario {
+    padding: 8px 15px;
+    margin-top: 10px;
+  }
+  .container-check-item {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+  }
+  .container-ayuda-diplo {
+    width: 105px;
+    padding: 8px;
+  }
+  .container-ayuda-diplo .icon-ayuda {
+    font-size: 16px;
+  }
+  .btn-pag-diplomado {
+    padding: 0 9px;
+  }
+  .text-btn-anterior {
+    margin-left: 8px;
+  }
+  .text-btn-continuar {
+    margin-right: 8px;
+  }
+  .container-btn-actividad-realizada {
+    margin: 0 auto;
+    margin-bottom: 120px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container-contenido-diplomado {
+    margin-left: 0;
+  }
+  .container-content-diplomado {
+    padding-right: 0;
+  }
+  .container-barra-contenido-di {
+    width: 70%;
+  }
+  .container-btn-despl-menu {
+    width: 40px;
+    height: 40px;
+  }
+  .container-icono-atras {
+    width: 20px;
+    height: 20px;
+  }
+  .container-icono-atras i {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container-logo img,
+  .container-logo {
+    width: 160px;
+  }
+  .container-content-diplomado {
+    font-size: 11px;
+  }
+}

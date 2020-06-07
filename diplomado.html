@@ -13,12 +13,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="generalStyle.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style2.css" />
-    <link rel="stylesheet" href="style3.css" />
     <link rel="stylesheet" href="styleF.css" />
     <link rel="stylesheet" href="cursosStyle.css" />
     <link rel="stylesheet" href="diplomadoStyle.css" />
+    <link rel="stylesheet" href="estilosResponsive/cursosResponsive.css" />
+    <link rel="stylesheet" href="./estilosResponsive/generalResponsive.css" />
+    <link rel="stylesheet" href="./estilosResponsive/diplomadoResonsive.css" />
   </head>
   <body>
     <header class="header">
@@ -27,15 +27,17 @@
           <img src="./assets/logo-horizontal.png" alt="Logo Corporquidea" />
         </a>
       </div>
-      <nav class="container-menu">
+      <nav id="container-menu" class="container-menu menu-oculto">
+        <div class="container-header-menu-responsive">
+          <i id="icono-cerrar-menu" class="icon-close"></i>
+        </div>
         <ol class="opciones-menu">
-          <li class="list-menu">
-            <a class="item-menu" href=""
+          <li id="list-menu-academia" class="list-menu">
+            <spam class="item-menu"
               >Academia
-              <i class="icon-keyboard_arrow_down"></i>
-            </a>
-
-            <ol class="container-menu-despl">
+              <i id="icono-submenu" class="icon-keyboard_arrow_down"></i>
+            </spam>
+            <ol id="opciones-academia" class="container-menu-despl">
               <li class="list-desple">
                 <a class="link-desple" href="./cursos.html">Cursos</a>
               </li>
@@ -53,12 +55,12 @@
           <li class="list-menu">
             <a class="item-menu" href="./orquiblog.html">Blog</a>
           </li>
-          <li class="list-menu">
-            <a class="item-menu" href=""
+          <li id="list-menu-actividades" class="list-menu">
+            <spam class="item-menu" href=""
               >Actividades
-              <i class="icon-keyboard_arrow_down"></i>
-            </a>
-            <ol class="container-menu-despl">
+              <i id="icono-submenu-act" class="icon-keyboard_arrow_down"></i>
+            </spam>
+            <ol id="opciones-actividades" class="container-menu-despl">
               <li class="list-desple">
                 <a class="link-desple" href="./CIOBE.html">CIOBE</a>
               </li>
@@ -77,17 +79,23 @@
             >
               Iniciar Sesión
             </button> -->
-          <div id="container-user-profile" class="container-user-profile">
-            <img class="img-user-profile" src="./assets/señor.png" alt="" />
-            <div
-              id="container-cerrar-sesion"
-              class="container-cerrar-sesion opcion-cerrar-sesion"
-            >
-              <a href="./index.html">Cerrar sesión</a>
+          <div class="container-user-logout">
+            <div id="container-user-profile" class="container-user-profile">
+              <img class="img-user-profile" src="./assets/señor.png" alt="" />
+              <div
+                id="container-cerrar-sesion"
+                class="container-cerrar-sesion opcion-cerrar-sesion"
+              >
+                <a href="./index.html">Cerrar sesión</a>
+              </div>
             </div>
+            <a href="./index.html" class="logout-responsive">Cerrar Sesión</a>
           </div>
         </ol>
       </nav>
+      <div id="container-menu-hamburguesa" class="container-menu-hamburguesa">
+        <i class="icon-menu1"></i>
+      </div>
     </header>
     <div class="container-fragmen-cursos">
       <section class="container-mis-cursos">
@@ -105,15 +113,19 @@
         </div>
       </section>
     </div>
+    <div id="menu-despl-diplomado" class="container-btn-despl-menu">
+      <div class="container-icono-atras icono-nuevo-modal">
+        <i class="icon-arrow_forward_ios"></i>
+      </div>
+      <!-- <i class="icon-configuracion"></i> -->
+    </div>
+
     <div class="container-fragmen-cursos">
       <section class="container-content-diplomado">
-        <div class="container-barra-contenido-di">
-          <div class="container-ant-sig">
-            <div class="container-icono-atras">
-              <i class="icon-arrow_forward_ios"></i>
-            </div>
-            <i class="icon-configuracion"></i>
-          </div>
+        <div
+          id="desple-cursos-diplomado"
+          class="container-barra-contenido-di add-barra-curso"
+        >
           <div class="container-proceso-diplomado">
             <h2>Introducción al cuidado de las orquideas</h2>
             <div class="container-barra-proceso-diplomado">
@@ -301,11 +313,12 @@
                   />
                 </div>
                 <div class="container-label-comentar">
-                  <input
+                  <textarea
                     class="text-comentario"
                     placeholder="Dejar un comentario público"
                     type="text"
-                  />
+                  >
+                  </textarea>
                 </div>
               </div>
               <button type="submit" class="boton-comentario">Comentar</button>
@@ -320,15 +333,15 @@
                     alt=""
                   />
                 </div>
-                <div class="container-contenido-comentarios">
-                  <div class="container-nombre-dia">
-                    <p class="nombre-usuario">Miguel</p>
-                    <p class="fecha-comentario">Hace 1 día</p>
-                  </div>
-                  <p class="contenido-comentario">
-                    La orquídea es la flor nacional
-                  </p>
+                <!-- <div class="container-contenido-comentarios"> -->
+                <div class="container-nombre-dia">
+                  <p class="nombre-usuario">Miguel</p>
+                  <p class="fecha-comentario">Hace 1 día</p>
                 </div>
+                <p class="contenido-comentario">
+                  La orquídea es la flor nacional
+                </p>
+                <!-- </div> -->
               </div>
               <div class="container-comentarios-usuarios-exp">
                 <div class="container-imagen-user-co">
@@ -338,15 +351,15 @@
                     alt=""
                   />
                 </div>
-                <div class="container-contenido-comentarios">
-                  <div class="container-nombre-dia">
-                    <p class="nombre-usuario">Carolina</p>
-                    <p class="fecha-comentario">Hace 2 día</p>
-                  </div>
-                  <p class="contenido-comentario">
-                    Y es la más linda del mundo
-                  </p>
+                <!-- <div class="container-contenido-comentarios"> -->
+                <div class="container-nombre-dia">
+                  <p class="nombre-usuario">Miguel</p>
+                  <p class="fecha-comentario">Hace 1 día</p>
                 </div>
+                <p class="contenido-comentario">
+                  La orquídea es la flor nacional
+                </p>
+                <!-- </div> -->
               </div>
               <div class="container-comentarios-usuarios-exp">
                 <div class="container-imagen-user-co">
@@ -356,26 +369,26 @@
                     alt=""
                   />
                 </div>
-                <div class="container-contenido-comentarios">
-                  <div class="container-nombre-dia">
-                    <p class="nombre-usuario">Koffee</p>
-                    <p class="fecha-comentario">Hace 2 día</p>
-                  </div>
-                  <p class="contenido-comentario">
-                    Las orquídeas u orquidáceas (nombre científico Orchidaceae)
-                    son una familia de plantas monocotiledóneas que se
-                    distinguen por la complejidad de sus flores y por sus
-                    interacciones ecológicas con los agentes polinizadores y con
-                    los hongos con los que forman micorrizas.
-                  </p>
+                <!-- <div class="container-contenido-comentarios"> -->
+                <div class="container-nombre-dia">
+                  <p class="nombre-usuario">Miguel</p>
+                  <p class="fecha-comentario">Hace 1 día</p>
                 </div>
+                <p class="contenido-comentario">
+                  Las orquídeas u orquidáceas (nombre científico Orchidaceae)
+                  son una familia de plantas monocotiledóneas que se distinguen
+                  por la complejidad de sus flores y por sus interacciones
+                  ecológicas con los agentes polinizadores y con los hongos con
+                  los que forman micorrizas.
+                </p>
+                <!-- </div> -->
               </div>
             </div>
           </div>
         </div>
       </section>
     </div>
-    <section class="container-cursos-destacados">
+    <section id="cursos-destacados" class="container-cursos-destacados">
       <h2 class="title-card-cursos">Cursos Destacados</h2>
       <div class="container-box-card">
         <article class="card-curso-destacado">
@@ -660,5 +673,7 @@
     <script src="./modalIniciarSesion.js"></script>
     <script src="actividadRealizada.js"></script>
     <script src="./cerrarSesion.js"></script>
+    <script src="./menu-responsive.js"></script>
+    <script src="./menu-despl-diplomado.js"></script>
   </body>
 </html>
