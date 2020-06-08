@@ -1,0 +1,116 @@
+@media screen and (max-width: 1000px) {
+  .container-mis-cursos,
+  .container-card-proceso,
+  .container-content-todos-cursos {
+    font-size: 11px;
+  }
+  .container-icono-item-curso .icon-keyboard_arrow_down {
+    font-size: 65px;
+  }
+
+  .item-card-curso {
+    padding: 20px;
+  }
+  .btn-ir-unidad {
+    padding: 10px 30px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container-proceso {
+    padding: 0;
+    margin-bottom: 45px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 790px) {
+  .container-fragmen-mis-cursos {
+    padding: 0 40px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .container-card-proceso {
+    flex-direction: column;
+  }
+  .container-card-proceso-content {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .container-btn-card-proceso {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+@media screen and (max-width: 630px) {
+  .container-card-proceso {
+    padding: 25px;
+  }
+  .item-card-curso {
+    padding: 20px 8px;
+  }
+  .container-icono-item-curso .icon-keyboard_arrow_down {
+    font-size: 45px;
+  }
+  .container-content-todos-cursos {
+    font-size: 9px;
+  }
+  .container-link-adjunto {
+    font-size: 14px;
+    padding-left: 6px;
+  }
+  .container-link-adjunto .icon-paperclip {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 475px) {
+  .container-fragmen-mis-cursos {
+    padding: 0 30px;
+  }
+  .btn-ir-unidad {
+    font-size: 1.4em;
+    padding: 8px 15px;
+  }
+  .title-cursos,
+  .title-card-proceso,
+  .title-aprende-mas {
+    line-height: 29px;
+  }
+  .title-aprende-mas {
+    font-size: 2.2em;
+  }
+  .title-card-proceso {
+    font-size: 1.9em;
+  }
+  .title-aprende-mas {
+    text-align: center;
+  }
+  .autor-proceso {
+    margin-bottom: 10px;
+  }
+  .container-icono-check {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+  }
+  .icon-checkmark {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container-card-proceso {
+    font-size: 9px;
+  }
+  .title-card-proceso {
+    line-height: 20px;
+  }
+  .container-content-todos-cursos {
+    font-size: 8px;
+  }
+  .item-card-curso {
+    padding: 15px 8px;
+  }
+  .container-icono-item-curso .icon-keyboard_arrow_down {
+    font-size: 35px;
+  }
+  }
+}

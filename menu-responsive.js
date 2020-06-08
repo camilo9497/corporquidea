@@ -1,3 +1,6 @@
+const body = document.querySelector("body");
+body.addEventListener("click", clickEnBody);
+
 const containerMenuHamburguesa = document.getElementById(
   "container-menu-hamburguesa"
 );
@@ -5,9 +8,7 @@ containerMenuHamburguesa.addEventListener("click", abrirMenuResponsive);
 
 const containerMenuResponsive = document.getElementById("container-menu");
 const cerrarMenu = document.getElementById("icono-cerrar-menu");
-cerrarMenu.addEventListener("click", cerrarMenuResponsive);
-
-body.addEventListener("click", cerrarMenuResponsive);
+cerrarMenu.addEventListener("click", clickEnBody);
 
 const menuAcademia = document.getElementById("list-menu-academia");
 menuAcademia.addEventListener("click", abrirOpciones);
@@ -25,7 +26,9 @@ function abrirMenuResponsive(e) {
   console.log("le dio click en abirir");
 }
 
-function cerrarMenuResponsive(e) {
+function clickEnBody(e) {
+  console.log("se hizo otra cosa");
+  containerCerrarSesion.classList.add("opcion-cerrar-sesion");
   containerMenuResponsive.classList.add("menu-oculto");
 }
 

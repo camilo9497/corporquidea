@@ -3,12 +3,16 @@ const containerModalIniciar = document.getElementById(
 );
 const cerrarModalInicio = document.getElementById("cerrar-modal-iniciar");
 const btnIniciarSesion = document.getElementById("btn-iniciar-sesion");
-btnIniciarSesion.addEventListener("click", abrirModalInicio);
-cerrarModalInicio.addEventListener("click", cerrarElModalInicio);
+try {
+  btnIniciarSesion.addEventListener("click", abrirModalInicio);
+  cerrarModalInicio.addEventListener("click", cerrarElModalInicio);
 
-function abrirModalInicio() {
-  containerModalIniciar.classList.remove("quitar-modal");
-}
-function cerrarElModalInicio() {
-  containerModalIniciar.classList.add("quitar-modal");
+  function abrirModalInicio() {
+    containerModalIniciar.classList.remove("quitar-modal");
+  }
+  function cerrarElModalInicio() {
+    containerModalIniciar.classList.add("quitar-modal");
+  }
+} catch (error) {
+  console.log("error");
 }

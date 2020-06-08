@@ -329,4 +329,7 @@
   .container-informacion {
     font-size: 12px;
   }
+  .title-video-curso {
+    line-height: 25px;
+  }
 }

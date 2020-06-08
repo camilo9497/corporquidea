@@ -122,3 +122,25 @@
     grid-template-rows: auto 200px;
   }
 }
+@media screen and (max-width: 320px) {
+  .imagen-user-curso {
+    width: 55px;
+    height: 55px;
+  }
+  .container-insig {
+    font-size: 12px;
+  }
+  .container-cursos-content {
+    font-size: 11px;
+  }
+  .curso-item {
+    grid-template-rows: auto 130px;
+  }
+  .container-multimedia {
+    height: 133px;
+  }
+  .title-video-curso {
+    padding-right: 30px;
+    line-height: 25px;
+  }
+}
