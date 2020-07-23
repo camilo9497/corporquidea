@@ -372,6 +372,7 @@ body {
   padding-left: 5px;
   color: white;
   cursor: pointer;
+  margin-bottom: 30px;
 }
 .container-boton-ayuda p {
   font-size: 0.9em;
@@ -389,6 +390,31 @@ body {
   left: 9px;
   margin-right: 4px;
 }
+.container-chat-cliente {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  position: fixed;
+  z-index: 50;
+  right: 45px;
+  bottom: 22px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0px 3px 6px #00000029;
+}
+.container-chat-cliente i {
+  font-size: 40px;
+  color: #707070;
+}
+.container-chat-cliente i:hover {
+  color: #0dc143;
+
+  cursor: pointer;
+}
+
 .title-informacion-links {
   font-size: 1.1em;
   font-weight: bold;
@@ -1089,6 +1115,16 @@ body {
     width: 300px;
     margin: 0 auto;
     margin-top: 20px;
+  }
+  .container-chat-cliente {
+    left: initial;
+    right: 40px;
+    bottom: 45px;
+    width: 55px;
+    height: 55px;
+  }
+  .container-chat-cliente i {
+    font-size: 30px;
   }
 }
 

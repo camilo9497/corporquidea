@@ -25,10 +25,13 @@ function abrirMenuResponsive(e) {
   containerMenuResponsive.classList.remove("menu-oculto");
   console.log("le dio click en abirir");
 }
-
 function clickEnBody(e) {
   console.log("se hizo otra cosa");
-  containerCerrarSesion.classList.add("opcion-cerrar-sesion");
+  try {
+    containerCerrarSesion.classList.add("opcion-cerrar-sesion");
+  } catch (error) {
+    console.log(error);
+  }
   containerMenuResponsive.classList.add("menu-oculto");
 }
 

@@ -137,13 +137,13 @@ body {
 }
 .container-item-valor i {
   font-size: 4.8em;
-  color: #a9b966;
+  color: #373737;
 }
 
 .title-valor {
   font-size: 1.6em;
   margin: 15px 0;
-  color: #a9b966;
+  color: #373737;
   font-weight: bold;
 }
 .content-valor {
@@ -159,6 +159,8 @@ body {
 }
 .container-apoyo {
   padding: 55px 0 60px 0;
+  position: relative;
+  overflow: hidden;
 }
 .container-apoyo-promociones::before {
   content: " ";
@@ -190,8 +192,57 @@ body {
 
 .container-opiniones {
   display: flex;
+  height: 100%;
+  transition: transform 0.4s ease-in-out;
+}
+.container-arrow-left {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: red;
+  position: absolute;
+  top: calc(50% - 30px);
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: #00000030;
+  z-index: 5;
+}
+.container-arrow-right {
+  z-index: 5;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: red;
+  position: absolute;
+  top: calc(50% - 30px);
+  right: 0;
+  background: #00000030;
+}
+
+.container-arrow-left:hover,
+.container-arrow-right:hover {
+  background: #00000070;
+}
+.icon-keyboard_arrow_left {
+  font-size: 30px;
+  color: #363434;
+}
+.arrow-rotate {
+  transform: rotate(180deg);
+}
+
+.container-opinion {
+  display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 100%;
 }
 .container-imagen-opinion {
   width: 160px;
@@ -267,5 +318,17 @@ body {
   }
   .container-item-valor i {
     font-size: 4em;
+  }
+  .container-imagen-opinion {
+    width: 100px;
+    height: 100px;
+  }
+  .container-arrow-left,
+  .container-arrow-right {
+    width: 35px;
+    height: 35px;
+  }
+  .icon-keyboard_arrow_left {
+    font-size: 20px;
   }
 }

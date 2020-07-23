@@ -1,0 +1,195 @@
+:root {
+  --tituloHero: "Pacifico", cursive;
+  --titulos: "Dosis";
+}
+.fondoblan {
+  background: white;
+}
+.container-libro-content {
+  padding: 90px 0;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  grid-template-areas:
+    "portada titulo"
+    "portada descripcion"
+    "portada descBtn";
+}
+.container-img-libro {
+  grid-area: portada;
+  height: 660px;
+}
+
+.description-book {
+  grid-area: descripcion;
+}
+.container-descri-btn {
+  grid-area: descBtn;
+  display: flex;
+}
+.title-book,
+.description-book,
+.container-descri-btn {
+  padding: 0 70px;
+  font-size: 1.2em;
+  line-height: 35px;
+  color: #4a4a4a;
+  /* text-align: center; */
+}
+.content-descrip-cort {
+  width: 70%;
+  align-self: center;
+  margin-right: 20px;
+}
+.title-book {
+  grid-area: titulo;
+  font-size: 2.7em;
+  font-family: var(--titulos);
+  color: #08224a;
+  text-align: center;
+  align-self: center;
+}
+.container-img-libro {
+  width: 80%;
+}
+.container-img-libro img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container-btns-book {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  justify-content: space-evenly;
+}
+.container-btns-book a {
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  background: #1492e6;
+  color: white;
+  border-radius: 25px;
+}
+.container-btns-book a:hover {
+  opacity: 0.8;
+}
+.reverse-grid {
+  grid-template-columns: 1fr 40%;
+  grid-template-areas:
+    "titulo portada"
+    "descripcion portada"
+    "descBtn portada";
+}
+.reverse-img {
+  justify-self: end;
+}
+.reverse-container {
+  flex-direction: row-reverse;
+}
+.space-reverse {
+  margin-right: 20px;
+}
+@media screen and (max-width: 1366px) {
+  .container-libro-content {
+    font-size: 13px;
+  }
+  .container-img-libro {
+    width: 90%;
+    height: 550px;
+  }
+  .title-book,
+  .description-book,
+  .container-descri-btn {
+    line-height: 25px;
+    padding: 0;
+  }
+  .container-btns-book a {
+    height: 40px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container-img-libro {
+    height: 450px;
+  }
+  .title-book {
+    line-height: 32px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container-img-libro {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container-libro-content {
+    grid-template-areas:
+      "titulo titulo"
+      "descripcion descripcion"
+      "portada descBtn";
+    grid-template-columns: 180px 1fr;
+    row-gap: 25px;
+  }
+  .reverse-grid {
+    grid-template-columns: 1fr 180px;
+    grid-template-areas:
+      "titulo titulo"
+      "descripcion descripcion"
+      "descBtn portada";
+  }
+  .container-img-libro {
+    height: 240px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container-libro-content {
+    grid-template-areas:
+      "titulo"
+      "descripcion"
+      "portada"
+      "descBtn";
+    grid-template-columns: 1fr;
+  }
+  .container-img-libro {
+    width: 200px;
+    justify-self: center;
+  }
+  .container-descri-btn {
+    flex-direction: column;
+  }
+  .content-descrip-cort {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  .container-btns-book {
+    flex-direction: row;
+    width: 100%;
+  }
+  .container-btns-book a {
+    padding: 2px 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .description-book,
+  .content-descrip-cort {
+    text-align: justify;
+  }
+  .container-libro-content {
+    font-size: 12px;
+  }
+  .container-btns-book a {
+    line-height: 27px;
+    height: 27px;
+  }
+  .container-img-libro {
+    width: 180px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container-libro-content {
+    padding: 60px 0;
+  }
+}
